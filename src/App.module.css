@@ -29,6 +29,7 @@
   padding: 1rem;
   width: 100%;
   justify-content: space-around;
+  align-items: center;
 }
 
 .label {
@@ -79,7 +80,7 @@
   scrollbar-width: none; /* for Firefox */
 }
 
-@media (min-width: 766px) {
+@media (min-width: 880px) {
   .title {
     font-size: 3.5rem;
   }
