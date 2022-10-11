@@ -8,7 +8,7 @@
 }
 
 .title {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   letter-spacing: 0.3rem;
   text-align: center;
   color: green;
@@ -25,8 +25,9 @@
 
 .formControl {
   display: flex;
-  width: 70%;
+  flex-direction: column;
   padding: 1rem;
+  width: 100%;
   justify-content: space-around;
 }
 
@@ -47,20 +48,20 @@
 
 .btn {
   font: inherit;
-  font-size: 1.5rem;
   margin-top: 0.5rem;
+  font-size: 1.5rem;
   padding: 1rem;
   border-radius: 50px;
-  width: 60%;
+  width: 100%;
   color: green;
   background-color: rgb(39, 36, 36);
   cursor: pointer;
 }
 
 .result {
-  font-size: 3.5rem;
+  font-size: 2rem;
   color: green;
-  width: 60%;
+  width: 80%;
   padding: 1rem;
   text-align: center;
   display: flex;
@@ -76,4 +77,24 @@
   overflow-y: scroll;
   -ms-overflow-style: none; /* for Internet Explorer, Edge */
   scrollbar-width: none; /* for Firefox */
+}
+
+@media (min-width: 766px) {
+  .title {
+    font-size: 3.5rem;
+  }
+
+  .formControl {
+    flex-direction: row;
+    width: 70%;
+  }
+
+  .btn {
+    width: 60%;
+  }
+
+  .result {
+    font-size: 3.5rem;
+    width: 60%;
+  }
 }
